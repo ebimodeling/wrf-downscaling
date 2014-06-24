@@ -1,0 +1,17 @@
+type = continuous
+signed = no
+projection = regular_ll
+dx = 0.08
+dy = 0.08
+known_x = 1.0
+known_y = 1.0
+known_lat = -90.00000
+known_lon = -180.0000
+wordsize = 2
+scale_factor = 0.0001
+missing_value = 0.
+tile_x = 4500
+tile_y = 2250
+tile_z = 1
+units = "fraction"
+description = "Clay Fraction"

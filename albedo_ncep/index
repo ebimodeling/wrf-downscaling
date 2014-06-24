@@ -1,0 +1,17 @@
+type=continuous
+projection=regular_ll
+dx=0.144
+dy=0.144
+known_x=1.0
+known_y=1.0
+known_lat=-89.928
+known_lon=-179.928
+wordsize=1
+tile_x=1250
+tile_y=1250
+tile_z_start=1
+tile_z_end=12
+tile_bdr=3
+missing_value=0.
+units="percent"
+description="Monthly surface albedo"

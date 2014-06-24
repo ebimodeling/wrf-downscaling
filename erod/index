@@ -1,0 +1,17 @@
+type = continuous
+signed = no
+projection = regular_ll
+dx = 0.25
+dy = 0.25
+known_x = 1.0
+known_y = 1.0
+known_lat = -89.87500
+known_lon = -179.8750
+wordsize = 2
+scale_factor = 0.0001
+missing_value = 9.99E9
+tile_x = 1440
+tile_y = 720
+tile_z = 3
+units = "fraction"
+description = "EROD"
