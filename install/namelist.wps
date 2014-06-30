@@ -1,29 +1,31 @@
  &share
  wrf_core = 'ARW',
  max_dom = 3,
- start_date = '2012-09-30_12:00:00', '2012-09-30_12:00:00', '2012-09-30_12:00:00',
- end_date   = '2012-10-04_00:00:00', '2012-10-04_00:00:00', '2012-10-04_00:00:00',
+ start_date = '1987-09-29_00:00:00', '1987-09-29_00:00:00', '1987-09-29_00:00:00',
+ end_date   = '1987-09-30_00:00:00', '1987-09-30_00:00:00', '1987-09-30_00:00:00',
  interval_seconds = 21600
  io_form_geogrid = 2,
  /
  
  &geogrid
+ ;; defining domain
  parent_id         =   1, 1, 2,
  parent_grid_ratio =   1, 3, 3,
- i_parent_start    =   1, 20,60,
- j_parent_start    =   1, 26,64,
- e_we              =  110, 178,187,
- e_sn              =  110, 178,163,
+ i_parent_start    =   1, 31,71,
+ j_parent_start    =   1, 35,65,
+ ;; extent east/west and north/south
+ e_we              =  120, 202,187,
+ e_sn              =  120, 178,163,
  geog_data_res    = 'modis_30s+10m','modis_30s+2m','modis_30s+30s',
  dx = 18000,
  dy = 18000,
  map_proj = 'lambert',
  ref_lat   =  -18.2,
  ref_lon   = -49.,
- truelat1  =  -16.,
- truelat2  =  -20.6,
+ truelat1  =  -17.1,
+ truelat2  =  -19.2,
  stand_lon = -49.,
- geog_data_path = '/data/geog'
+ geog_data_path = '/brashear/dlebauer/geog_data/'
  /
  
  &ungrib
@@ -32,6 +34,7 @@
  /
  
  &metgrid
- fg_name = 'SST','ERA',
+ fg_name = 'ERA',
  io_form_metgrid = 2,
+ constants_name='./LSM:1989-01-01_12', './Z:1989-01-01_12',
  /
