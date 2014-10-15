@@ -1,0 +1,43 @@
+&share
+ wrf_core = 'ARW',
+ max_dom = 3,
+ start_date = '2008-01-07_00:00:00','2008-01-07_00:00:00','2008-01-07_00:00:00',
+ end_date   = '2008-01-08_00:00:00','2008-01-08_00:00:00','2008-01-08_00:00:00',
+ interval_seconds = 21600
+ io_form_geogrid = 2,
+/
+
+&geogrid
+ parent_id         =   1, 1, 2,
+ parent_grid_ratio =   1, 3, 3,
+ i_parent_start    =   1, 37,71,
+ j_parent_start    =   1, 35,65,
+ e_we              =  140, 202,187,
+ e_sn              =  130, 178,163,
+ geog_data_res    = 'modis_30s+10m','modis_30s+2m','modis_30s+30s',
+ dx = 18000,
+ dy = 18000,
+ map_proj = 'lambert',
+ ref_lat   =  -18.2,
+ ref_lon   = -49.,
+ truelat1  =  -17.1,
+ truelat2  =  -19.2,
+ stand_lon = -49.,
+ geog_data_path = '/work/01701/yefan/WRF/GEOG'
+/
+
+&ungrib
+ out_format = 'WPS',
+ prefix = 'LSM',
+/
+
+&ungrib
+ out_format = 'WPS',
+ prefix = 'Z',
+/
+
+&metgrid
+ fg_name = 'ERA', 'ERASFC'
+ io_form_metgrid = 2,
+ constants_name = './LSM:2008-01-07_00','./Z:2008-01-07_00','./LSM:2008-01-07_06','./Z:2008-01-07_06','./LSM:2008-01-07_12','./Z:2008-01-07_12','./LSM:2008-01-07_18','./Z:2008-01-07_18','./LSM:2008-01-08_00','./Z:2008-01-08_00',
+/
