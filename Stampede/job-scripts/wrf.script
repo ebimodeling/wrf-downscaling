@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH -J Wrf-Test-Run           # job name
+#SBATCH -o Wrf-Test-Run.o%j       # output and error file name (%j expands to jobID)
+#SBATCH -n 32              # total number of mpi tasks requested
+#SBATCH -p development     # queue (partition) -- normal, development, etc.
+#SBATCH -t 02:00:00        # run time (hh:mm:ss) - 1.5 hours
+#SBATCH --mail-user=fanye@illinois.edu
+#SBATCH --mail-type=begin  # email me when the job starts
+#SBATCH --mail-type=end    # email me when the job finishes
+#SBATCH -A TG-SES090019
+
+cd /work/01701/yefan/WRF/em_real
+
+ibrun /home1/01701/yefan/WRF/Build_WRF/WRFV3/main/wrf.exe

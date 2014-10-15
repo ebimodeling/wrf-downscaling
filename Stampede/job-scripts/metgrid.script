@@ -1,0 +1,12 @@
+#!/bin/bash
+#SBATCH -J Metgrid-Test-Run           # job name
+#SBATCH -o Metgrid-Test-Run.o%j       # output and error file name (%j expands to jobID)
+#SBATCH -n 32              # total number of mpi tasks requested
+#SBATCH -p development     # queue (partition) -- normal, development, etc.
+#SBATCH -t 02:00:00        # run time (hh:mm:ss) - 1.5 hours
+#SBATCH --mail-user=fanye@illinois.edu
+#SBATCH --mail-type=begin  # email me when the job starts
+#SBATCH --mail-type=end    # email me when the job finishes
+#SBATCH -A TG-SES090019
+cd /home1/01701/yefan/WRF/Build_WPS/WPS
+./metgrid.exe
