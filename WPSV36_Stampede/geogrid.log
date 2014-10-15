@@ -1,0 +1,524 @@
+2014-09-24 13:48:06.429 ---  *** Starting program geogrid.exe ***
+2014-09-24 13:48:06.496 --- Using the following namelist variables:
+2014-09-24 13:48:06.496 --- &SHARE
+2014-09-24 13:48:06.496 ---   WRF_CORE         = ARW
+2014-09-24 13:48:06.496 ---   MAX_DOM          = 3
+2014-09-24 13:48:06.497 ---   START_YEAR       = 0
+2014-09-24 13:48:06.497 ---                    = 0
+2014-09-24 13:48:06.497 ---                    = 0
+2014-09-24 13:48:06.497 ---   START_MONTH      = 0
+2014-09-24 13:48:06.497 ---                    = 0
+2014-09-24 13:48:06.497 ---                    = 0
+2014-09-24 13:48:06.497 ---   START_DAY        = 0
+2014-09-24 13:48:06.497 ---                    = 0
+2014-09-24 13:48:06.497 ---                    = 0
+2014-09-24 13:48:06.497 ---   START_HOUR       = 0
+2014-09-24 13:48:06.497 ---                    = 0
+2014-09-24 13:48:06.497 ---                    = 0
+2014-09-24 13:48:06.497 ---   START_MINUTE     = 0
+2014-09-24 13:48:06.497 ---                    = 0
+2014-09-24 13:48:06.498 ---                    = 0
+2014-09-24 13:48:06.498 ---   START_SECOND     = 0
+2014-09-24 13:48:06.498 ---                    = 0
+2014-09-24 13:48:06.498 ---                    = 0
+2014-09-24 13:48:06.498 ---   END_YEAR         = 0
+2014-09-24 13:48:06.498 ---                    = 0
+2014-09-24 13:48:06.498 ---                    = 0
+2014-09-24 13:48:06.498 ---   END_MONTH        = 0
+2014-09-24 13:48:06.498 ---                    = 0
+2014-09-24 13:48:06.498 ---                    = 0
+2014-09-24 13:48:06.498 ---   END_DAY          = 0
+2014-09-24 13:48:06.498 ---                    = 0
+2014-09-24 13:48:06.498 ---                    = 0
+2014-09-24 13:48:06.498 ---   END_HOUR         = 0
+2014-09-24 13:48:06.499 ---                    = 0
+2014-09-24 13:48:06.499 ---                    = 0
+2014-09-24 13:48:06.499 ---   END_MINUTE       = 0
+2014-09-24 13:48:06.499 ---                    = 0
+2014-09-24 13:48:06.499 ---                    = 0
+2014-09-24 13:48:06.499 ---   END_SECOND       = 0
+2014-09-24 13:48:06.499 ---                    = 0
+2014-09-24 13:48:06.499 ---                    = 0
+2014-09-24 13:48:06.499 ---   START_DATE       = 2008-01-07_00:00:00
+2014-09-24 13:48:06.499 ---                    = 2008-01-07_00:00:00
+2014-09-24 13:48:06.499 ---                    = 2008-01-07_00:00:00
+2014-09-24 13:48:06.499 ---   END_DATE         = 2008-01-08_00:00:00
+2014-09-24 13:48:06.499 ---                    = 2008-01-08_00:00:00
+2014-09-24 13:48:06.500 ---                    = 2008-01-08_00:00:00
+2014-09-24 13:48:06.500 ---   INTERVAL_SECONDS = 21600
+2014-09-24 13:48:06.500 ---   IO_FORM_GEOGRID  = 2
+2014-09-24 13:48:06.500 ---   OPT_OUTPUT_FROM_GEOGRID_PATH = ./
+2014-09-24 13:48:06.500 ---   SUBGRID_RATIO_X  = 1
+2014-09-24 13:48:06.500 ---                    = 1
+2014-09-24 13:48:06.500 ---                    = 1
+2014-09-24 13:48:06.500 ---   SUBGRID_RATIO_Y  = 1
+2014-09-24 13:48:06.500 ---                    = 1
+2014-09-24 13:48:06.500 ---                    = 1
+2014-09-24 13:48:06.500 ---   DEBUG_LEVEL      = 0
+2014-09-24 13:48:06.500 ---   ACTIVE_GRID      = .TRUE.
+2014-09-24 13:48:06.500 ---                    = .TRUE.
+2014-09-24 13:48:06.500 ---                    = .TRUE.
+2014-09-24 13:48:06.501 ---   NOCOLONS         = .FALSE.
+2014-09-24 13:48:06.501 --- /
+2014-09-24 13:48:06.501 --- &GEOGRID
+2014-09-24 13:48:06.501 ---   PARENT_ID         = 1
+2014-09-24 13:48:06.501 ---                     = 1
+2014-09-24 13:48:06.501 ---                     = 2
+2014-09-24 13:48:06.501 ---   PARENT_GRID_RATIO = 1
+2014-09-24 13:48:06.501 ---                     = 3
+2014-09-24 13:48:06.501 ---                     = 3
+2014-09-24 13:48:06.501 ---   I_PARENT_START    = 1
+2014-09-24 13:48:06.501 ---                     = 37
+2014-09-24 13:48:06.501 ---                     = 71
+2014-09-24 13:48:06.501 ---   J_PARENT_START    = 1
+2014-09-24 13:48:06.501 ---                     = 35
+2014-09-24 13:48:06.501 ---                     = 65
+2014-09-24 13:48:06.502 ---   S_WE              = 1
+2014-09-24 13:48:06.502 ---                     = 1
+2014-09-24 13:48:06.502 ---                     = 1
+2014-09-24 13:48:06.502 ---   E_WE              = 140
+2014-09-24 13:48:06.502 ---                     = 202
+2014-09-24 13:48:06.502 ---                     = 187
+2014-09-24 13:48:06.502 ---   S_SN              = 1
+2014-09-24 13:48:06.502 ---                     = 1
+2014-09-24 13:48:06.502 ---                     = 1
+2014-09-24 13:48:06.502 ---   E_SN              = 130
+2014-09-24 13:48:06.502 ---                     = 178
+2014-09-24 13:48:06.502 ---                     = 163
+2014-09-24 13:48:06.502 ---   GEOG_DATA_RES     = modis_30s+10m
+2014-09-24 13:48:06.503 ---                     = modis_30s+2m
+2014-09-24 13:48:06.503 ---                     = modis_30s+30s
+2014-09-24 13:48:06.503 ---   DX                = 18000.000000
+2014-09-24 13:48:06.503 ---   DY                = 18000.000000
+2014-09-24 13:48:06.503 ---   MAP_PROJ          = lambert
+2014-09-24 13:48:06.503 ---   POLE_LAT          = 90.000000
+2014-09-24 13:48:06.503 ---   POLE_LON          = 0.000000
+2014-09-24 13:48:06.503 ---   REF_LAT           = -18.200001
+2014-09-24 13:48:06.503 ---   REF_LON           = -49.000000
+2014-09-24 13:48:06.503 ---   REF_X             = 100000002004087734272.000000
+2014-09-24 13:48:06.503 ---   REF_Y             = 100000002004087734272.000000
+2014-09-24 13:48:06.503 ---   TRUELAT1          = -17.100000
+2014-09-24 13:48:06.503 ---   TRUELAT2          = -19.200001
+2014-09-24 13:48:06.504 ---   STAND_LON         = -49.000000
+2014-09-24 13:48:06.504 ---   GEOG_DATA_PATH    = /work/01701/yefan/WRF/GEOG
+2014-09-24 13:48:06.504 ---   OPT_GEOGRID_TBL_PATH = geogrid/
+2014-09-24 13:48:06.504 --- /
+2014-09-24 13:48:06.532 --- Processing domain 1 of 3
+2014-09-24 13:48:06.533 --- INFORM: For HGT_M, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:06.533 --- INFORM: Using 10m interpolator sequence for HGT_M.
+2014-09-24 13:48:06.533 --- INFORM: For HGT_M, couldn't find modis_30s data source.
+2014-09-24 13:48:06.533 --- INFORM: Using 10m data source for HGT_M.
+2014-09-24 13:48:06.560 --- INFORM: Using modis_30s interpolator sequence for LANDUSEF.
+2014-09-24 13:48:06.560 --- INFORM: Using modis_30s data source for LANDUSEF.
+2014-09-24 13:48:06.578 --- INFORM: For SOILTEMP, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:06.578 --- INFORM: For SOILTEMP, couldn't find interpolator sequence for resolution 10m.
+2014-09-24 13:48:06.578 --- INFORM: Using default interpolator sequence for SOILTEMP.
+2014-09-24 13:48:06.578 --- INFORM: For SOILTEMP, couldn't find modis_30s data source.
+2014-09-24 13:48:06.578 --- INFORM: For SOILTEMP, couldn't find 10m data source.
+2014-09-24 13:48:06.578 --- INFORM: Using default data source for SOILTEMP.
+2014-09-24 13:48:06.595 --- INFORM: For SOILCTOP, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:06.595 --- INFORM: Using 10m interpolator sequence for SOILCTOP.
+2014-09-24 13:48:06.595 --- INFORM: For SOILCTOP, couldn't find modis_30s data source.
+2014-09-24 13:48:06.595 --- INFORM: Using 10m data source for SOILCTOP.
+2014-09-24 13:48:06.615 --- INFORM: For SOILCBOT, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:06.615 --- INFORM: Using 10m interpolator sequence for SOILCBOT.
+2014-09-24 13:48:06.615 --- INFORM: For SOILCBOT, couldn't find modis_30s data source.
+2014-09-24 13:48:06.615 --- INFORM: Using 10m data source for SOILCBOT.
+2014-09-24 13:48:06.634 --- INFORM: For ALBEDO12M, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:06.634 --- INFORM: For ALBEDO12M, couldn't find interpolator sequence for resolution 10m.
+2014-09-24 13:48:06.634 --- INFORM: Using default interpolator sequence for ALBEDO12M.
+2014-09-24 13:48:06.635 --- INFORM: For ALBEDO12M, couldn't find modis_30s data source.
+2014-09-24 13:48:06.635 --- INFORM: For ALBEDO12M, couldn't find 10m data source.
+2014-09-24 13:48:06.635 --- INFORM: Using default data source for ALBEDO12M.
+2014-09-24 13:48:06.653 --- INFORM: For GREENFRAC, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:06.653 --- INFORM: For GREENFRAC, couldn't find interpolator sequence for resolution 10m.
+2014-09-24 13:48:06.653 --- INFORM: Using default interpolator sequence for GREENFRAC.
+2014-09-24 13:48:06.653 --- INFORM: For GREENFRAC, couldn't find modis_30s data source.
+2014-09-24 13:48:06.653 --- INFORM: For GREENFRAC, couldn't find 10m data source.
+2014-09-24 13:48:06.653 --- INFORM: Using default data source for GREENFRAC.
+2014-09-24 13:48:06.671 --- INFORM: For LAI12M, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:06.671 --- INFORM: For LAI12M, couldn't find interpolator sequence for resolution 10m.
+2014-09-24 13:48:06.671 --- INFORM: Using default interpolator sequence for LAI12M.
+2014-09-24 13:48:06.671 --- INFORM: For LAI12M, couldn't find modis_30s data source.
+2014-09-24 13:48:06.671 --- INFORM: For LAI12M, couldn't find 10m data source.
+2014-09-24 13:48:06.671 --- INFORM: Using default data source for LAI12M.
+2014-09-24 13:48:06.688 --- INFORM: For SNOALB, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:06.689 --- INFORM: For SNOALB, couldn't find interpolator sequence for resolution 10m.
+2014-09-24 13:48:06.689 --- INFORM: Using default interpolator sequence for SNOALB.
+2014-09-24 13:48:06.689 --- INFORM: For SNOALB, couldn't find modis_30s data source.
+2014-09-24 13:48:06.689 --- INFORM: For SNOALB, couldn't find 10m data source.
+2014-09-24 13:48:06.689 --- INFORM: Using default data source for SNOALB.
+2014-09-24 13:48:06.703 --- INFORM: For SLOPECAT, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:06.704 --- INFORM: For SLOPECAT, couldn't find interpolator sequence for resolution 10m.
+2014-09-24 13:48:06.704 --- INFORM: Using default interpolator sequence for SLOPECAT.
+2014-09-24 13:48:06.704 --- INFORM: For SLOPECAT, couldn't find modis_30s data source.
+2014-09-24 13:48:06.704 --- INFORM: For SLOPECAT, couldn't find 10m data source.
+2014-09-24 13:48:06.704 --- INFORM: Using default data source for SLOPECAT.
+2014-09-24 13:48:06.719 --- INFORM: For CON, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:06.719 --- INFORM: Using 10m interpolator sequence for CON.
+2014-09-24 13:48:06.719 --- INFORM: For CON, couldn't find modis_30s data source.
+2014-09-24 13:48:06.719 --- INFORM: Using 10m data source for CON.
+2014-09-24 13:48:06.736 --- INFORM: For VAR, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:06.736 --- INFORM: Using 10m interpolator sequence for VAR.
+2014-09-24 13:48:06.736 --- INFORM: For VAR, couldn't find modis_30s data source.
+2014-09-24 13:48:06.736 --- INFORM: Using 10m data source for VAR.
+2014-09-24 13:48:06.755 --- INFORM: For OA1, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:06.755 --- INFORM: Using 10m interpolator sequence for OA1.
+2014-09-24 13:48:06.755 --- INFORM: For OA1, couldn't find modis_30s data source.
+2014-09-24 13:48:06.755 --- INFORM: Using 10m data source for OA1.
+2014-09-24 13:48:06.766 --- INFORM: For OA2, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:06.766 --- INFORM: Using 10m interpolator sequence for OA2.
+2014-09-24 13:48:06.766 --- INFORM: For OA2, couldn't find modis_30s data source.
+2014-09-24 13:48:06.766 --- INFORM: Using 10m data source for OA2.
+2014-09-24 13:48:06.783 --- INFORM: For OA3, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:06.783 --- INFORM: Using 10m interpolator sequence for OA3.
+2014-09-24 13:48:06.783 --- INFORM: For OA3, couldn't find modis_30s data source.
+2014-09-24 13:48:06.783 --- INFORM: Using 10m data source for OA3.
+2014-09-24 13:48:06.801 --- INFORM: For OA4, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:06.801 --- INFORM: Using 10m interpolator sequence for OA4.
+2014-09-24 13:48:06.802 --- INFORM: For OA4, couldn't find modis_30s data source.
+2014-09-24 13:48:06.802 --- INFORM: Using 10m data source for OA4.
+2014-09-24 13:48:06.819 --- INFORM: For OL1, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:06.819 --- INFORM: Using 10m interpolator sequence for OL1.
+2014-09-24 13:48:06.819 --- INFORM: For OL1, couldn't find modis_30s data source.
+2014-09-24 13:48:06.819 --- INFORM: Using 10m data source for OL1.
+2014-09-24 13:48:06.840 --- INFORM: For OL2, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:06.840 --- INFORM: Using 10m interpolator sequence for OL2.
+2014-09-24 13:48:06.840 --- INFORM: For OL2, couldn't find modis_30s data source.
+2014-09-24 13:48:06.840 --- INFORM: Using 10m data source for OL2.
+2014-09-24 13:48:06.858 --- INFORM: For OL3, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:06.858 --- INFORM: Using 10m interpolator sequence for OL3.
+2014-09-24 13:48:06.859 --- INFORM: For OL3, couldn't find modis_30s data source.
+2014-09-24 13:48:06.859 --- INFORM: Using 10m data source for OL3.
+2014-09-24 13:48:06.876 --- INFORM: For OL4, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:06.876 --- INFORM: Using 10m interpolator sequence for OL4.
+2014-09-24 13:48:06.876 --- INFORM: For OL4, couldn't find modis_30s data source.
+2014-09-24 13:48:06.876 --- INFORM: Using 10m data source for OL4.
+2014-09-24 13:48:06.898 --- INFORM: For VAR_SSO, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:06.898 --- INFORM: Using 10m interpolator sequence for VAR_SSO.
+2014-09-24 13:48:06.898 --- INFORM: For VAR_SSO, couldn't find modis_30s data source.
+2014-09-24 13:48:06.899 --- INFORM: Using 10m data source for VAR_SSO.
+2014-09-24 13:48:06.915 --- INFORM: For LAKE_DEPTH, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:06.916 --- INFORM: For LAKE_DEPTH, couldn't find interpolator sequence for resolution 10m.
+2014-09-24 13:48:06.916 --- INFORM: Using default interpolator sequence for LAKE_DEPTH.
+2014-09-24 13:48:06.916 --- INFORM: For LAKE_DEPTH, couldn't find modis_30s data source.
+2014-09-24 13:48:06.916 --- INFORM: For LAKE_DEPTH, couldn't find 10m data source.
+2014-09-24 13:48:06.916 --- INFORM: Using default data source for LAKE_DEPTH.
+2014-09-24 13:48:07.080 --- Processing field 1 of 25 (LANDUSEF)
+2014-09-24 13:48:09.483 --- Processing field 2 of 25 (LU_INDEX)
+2014-09-24 13:48:09.486 --- Processing field 3 of 25 (HGT_M)
+2014-09-24 13:48:09.609 --- Processing field 4 of 25 (SOILTEMP)
+2014-09-24 13:48:09.637 --- Processing field 5 of 25 (SOILCTOP)
+2014-09-24 13:48:09.821 --- Processing field 6 of 25 (SCT_DOM)
+2014-09-24 13:48:09.822 --- Processing field 7 of 25 (SOILCBOT)
+2014-09-24 13:48:10.007 --- Processing field 8 of 25 (SCB_DOM)
+2014-09-24 13:48:10.008 --- Processing field 9 of 25 (ALBEDO12M)
+2014-09-24 13:48:10.149 --- Processing field 10 of 25 (GREENFRAC)
+2014-09-24 13:48:10.291 --- Processing field 11 of 25 (LAI12M)
+2014-09-24 13:48:10.424 --- Processing field 12 of 25 (SNOALB)
+2014-09-24 13:48:10.451 --- Processing field 13 of 25 (SLOPECAT)
+2014-09-24 13:48:10.488 --- Processing field 14 of 25 (CON)
+2014-09-24 13:48:10.543 --- Processing field 15 of 25 (VAR)
+2014-09-24 13:48:10.598 --- Processing field 16 of 25 (OA1)
+2014-09-24 13:48:10.656 --- Processing field 17 of 25 (OA2)
+2014-09-24 13:48:10.710 --- Processing field 18 of 25 (OA3)
+2014-09-24 13:48:10.771 --- Processing field 19 of 25 (OA4)
+2014-09-24 13:48:10.834 --- Processing field 20 of 25 (OL1)
+2014-09-24 13:48:10.884 --- Processing field 21 of 25 (OL2)
+2014-09-24 13:48:10.941 --- Processing field 22 of 25 (OL3)
+2014-09-24 13:48:10.995 --- Processing field 23 of 25 (OL4)
+2014-09-24 13:48:11.059 --- Processing field 24 of 25 (VAR_SSO)
+2014-09-24 13:48:11.226 --- Processing field 25 of 25 (LAKE_DEPTH)
+2014-09-24 13:48:13.718 --- Processing domain 2 of 3
+2014-09-24 13:48:13.718 --- INFORM: For HGT_M, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:13.718 --- INFORM: Using 2m interpolator sequence for HGT_M.
+2014-09-24 13:48:13.718 --- INFORM: For HGT_M, couldn't find modis_30s data source.
+2014-09-24 13:48:13.718 --- INFORM: Using 2m data source for HGT_M.
+2014-09-24 13:48:13.735 --- INFORM: Using modis_30s interpolator sequence for LANDUSEF.
+2014-09-24 13:48:13.735 --- INFORM: Using modis_30s data source for LANDUSEF.
+2014-09-24 13:48:13.736 --- INFORM: For SOILTEMP, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:13.736 --- INFORM: For SOILTEMP, couldn't find interpolator sequence for resolution 2m.
+2014-09-24 13:48:13.736 --- INFORM: Using default interpolator sequence for SOILTEMP.
+2014-09-24 13:48:13.736 --- INFORM: For SOILTEMP, couldn't find modis_30s data source.
+2014-09-24 13:48:13.736 --- INFORM: For SOILTEMP, couldn't find 2m data source.
+2014-09-24 13:48:13.736 --- INFORM: Using default data source for SOILTEMP.
+2014-09-24 13:48:13.737 --- INFORM: For SOILCTOP, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:13.737 --- INFORM: Using 2m interpolator sequence for SOILCTOP.
+2014-09-24 13:48:13.737 --- INFORM: For SOILCTOP, couldn't find modis_30s data source.
+2014-09-24 13:48:13.738 --- INFORM: Using 2m data source for SOILCTOP.
+2014-09-24 13:48:13.749 --- INFORM: For SOILCBOT, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:13.749 --- INFORM: Using 2m interpolator sequence for SOILCBOT.
+2014-09-24 13:48:13.749 --- INFORM: For SOILCBOT, couldn't find modis_30s data source.
+2014-09-24 13:48:13.749 --- INFORM: Using 2m data source for SOILCBOT.
+2014-09-24 13:48:13.766 --- INFORM: For ALBEDO12M, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:13.766 --- INFORM: For ALBEDO12M, couldn't find interpolator sequence for resolution 2m.
+2014-09-24 13:48:13.766 --- INFORM: Using default interpolator sequence for ALBEDO12M.
+2014-09-24 13:48:13.766 --- INFORM: For ALBEDO12M, couldn't find modis_30s data source.
+2014-09-24 13:48:13.766 --- INFORM: For ALBEDO12M, couldn't find 2m data source.
+2014-09-24 13:48:13.766 --- INFORM: Using default data source for ALBEDO12M.
+2014-09-24 13:48:13.767 --- INFORM: For GREENFRAC, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:13.767 --- INFORM: For GREENFRAC, couldn't find interpolator sequence for resolution 2m.
+2014-09-24 13:48:13.767 --- INFORM: Using default interpolator sequence for GREENFRAC.
+2014-09-24 13:48:13.768 --- INFORM: For GREENFRAC, couldn't find modis_30s data source.
+2014-09-24 13:48:13.768 --- INFORM: For GREENFRAC, couldn't find 2m data source.
+2014-09-24 13:48:13.768 --- INFORM: Using default data source for GREENFRAC.
+2014-09-24 13:48:13.768 --- INFORM: For LAI12M, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:13.769 --- INFORM: For LAI12M, couldn't find interpolator sequence for resolution 2m.
+2014-09-24 13:48:13.769 --- INFORM: Using default interpolator sequence for LAI12M.
+2014-09-24 13:48:13.769 --- INFORM: For LAI12M, couldn't find modis_30s data source.
+2014-09-24 13:48:13.769 --- INFORM: For LAI12M, couldn't find 2m data source.
+2014-09-24 13:48:13.769 --- INFORM: Using default data source for LAI12M.
+2014-09-24 13:48:13.770 --- INFORM: For SNOALB, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:13.770 --- INFORM: For SNOALB, couldn't find interpolator sequence for resolution 2m.
+2014-09-24 13:48:13.770 --- INFORM: Using default interpolator sequence for SNOALB.
+2014-09-24 13:48:13.770 --- INFORM: For SNOALB, couldn't find modis_30s data source.
+2014-09-24 13:48:13.770 --- INFORM: For SNOALB, couldn't find 2m data source.
+2014-09-24 13:48:13.770 --- INFORM: Using default data source for SNOALB.
+2014-09-24 13:48:13.771 --- INFORM: For SLOPECAT, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:13.771 --- INFORM: For SLOPECAT, couldn't find interpolator sequence for resolution 2m.
+2014-09-24 13:48:13.771 --- INFORM: Using default interpolator sequence for SLOPECAT.
+2014-09-24 13:48:13.771 --- INFORM: For SLOPECAT, couldn't find modis_30s data source.
+2014-09-24 13:48:13.772 --- INFORM: For SLOPECAT, couldn't find 2m data source.
+2014-09-24 13:48:13.772 --- INFORM: Using default data source for SLOPECAT.
+2014-09-24 13:48:13.772 --- INFORM: For CON, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:13.772 --- INFORM: For CON, couldn't find interpolator sequence for resolution 2m.
+2014-09-24 13:48:13.773 --- INFORM: Using default interpolator sequence for CON.
+2014-09-24 13:48:13.773 --- INFORM: For CON, couldn't find modis_30s data source.
+2014-09-24 13:48:13.773 --- INFORM: For CON, couldn't find 2m data source.
+2014-09-24 13:48:13.773 --- INFORM: Using default data source for CON.
+2014-09-24 13:48:13.774 --- INFORM: For VAR, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:13.774 --- INFORM: For VAR, couldn't find interpolator sequence for resolution 2m.
+2014-09-24 13:48:13.774 --- INFORM: Using default interpolator sequence for VAR.
+2014-09-24 13:48:13.774 --- INFORM: For VAR, couldn't find modis_30s data source.
+2014-09-24 13:48:13.774 --- INFORM: For VAR, couldn't find 2m data source.
+2014-09-24 13:48:13.774 --- INFORM: Using default data source for VAR.
+2014-09-24 13:48:13.775 --- INFORM: For OA1, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:13.775 --- INFORM: For OA1, couldn't find interpolator sequence for resolution 2m.
+2014-09-24 13:48:13.775 --- INFORM: Using default interpolator sequence for OA1.
+2014-09-24 13:48:13.775 --- INFORM: For OA1, couldn't find modis_30s data source.
+2014-09-24 13:48:13.775 --- INFORM: For OA1, couldn't find 2m data source.
+2014-09-24 13:48:13.775 --- INFORM: Using default data source for OA1.
+2014-09-24 13:48:13.776 --- INFORM: For OA2, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:13.776 --- INFORM: For OA2, couldn't find interpolator sequence for resolution 2m.
+2014-09-24 13:48:13.776 --- INFORM: Using default interpolator sequence for OA2.
+2014-09-24 13:48:13.776 --- INFORM: For OA2, couldn't find modis_30s data source.
+2014-09-24 13:48:13.777 --- INFORM: For OA2, couldn't find 2m data source.
+2014-09-24 13:48:13.777 --- INFORM: Using default data source for OA2.
+2014-09-24 13:48:13.777 --- INFORM: For OA3, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:13.777 --- INFORM: For OA3, couldn't find interpolator sequence for resolution 2m.
+2014-09-24 13:48:13.778 --- INFORM: Using default interpolator sequence for OA3.
+2014-09-24 13:48:13.778 --- INFORM: For OA3, couldn't find modis_30s data source.
+2014-09-24 13:48:13.778 --- INFORM: For OA3, couldn't find 2m data source.
+2014-09-24 13:48:13.778 --- INFORM: Using default data source for OA3.
+2014-09-24 13:48:13.779 --- INFORM: For OA4, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:13.779 --- INFORM: For OA4, couldn't find interpolator sequence for resolution 2m.
+2014-09-24 13:48:13.779 --- INFORM: Using default interpolator sequence for OA4.
+2014-09-24 13:48:13.779 --- INFORM: For OA4, couldn't find modis_30s data source.
+2014-09-24 13:48:13.779 --- INFORM: For OA4, couldn't find 2m data source.
+2014-09-24 13:48:13.779 --- INFORM: Using default data source for OA4.
+2014-09-24 13:48:13.780 --- INFORM: For OL1, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:13.780 --- INFORM: For OL1, couldn't find interpolator sequence for resolution 2m.
+2014-09-24 13:48:13.780 --- INFORM: Using default interpolator sequence for OL1.
+2014-09-24 13:48:13.780 --- INFORM: For OL1, couldn't find modis_30s data source.
+2014-09-24 13:48:13.780 --- INFORM: For OL1, couldn't find 2m data source.
+2014-09-24 13:48:13.781 --- INFORM: Using default data source for OL1.
+2014-09-24 13:48:13.781 --- INFORM: For OL2, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:13.781 --- INFORM: For OL2, couldn't find interpolator sequence for resolution 2m.
+2014-09-24 13:48:13.781 --- INFORM: Using default interpolator sequence for OL2.
+2014-09-24 13:48:13.782 --- INFORM: For OL2, couldn't find modis_30s data source.
+2014-09-24 13:48:13.782 --- INFORM: For OL2, couldn't find 2m data source.
+2014-09-24 13:48:13.782 --- INFORM: Using default data source for OL2.
+2014-09-24 13:48:13.782 --- INFORM: For OL3, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:13.783 --- INFORM: For OL3, couldn't find interpolator sequence for resolution 2m.
+2014-09-24 13:48:13.783 --- INFORM: Using default interpolator sequence for OL3.
+2014-09-24 13:48:13.783 --- INFORM: For OL3, couldn't find modis_30s data source.
+2014-09-24 13:48:13.783 --- INFORM: For OL3, couldn't find 2m data source.
+2014-09-24 13:48:13.783 --- INFORM: Using default data source for OL3.
+2014-09-24 13:48:13.784 --- INFORM: For OL4, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:13.784 --- INFORM: For OL4, couldn't find interpolator sequence for resolution 2m.
+2014-09-24 13:48:13.784 --- INFORM: Using default interpolator sequence for OL4.
+2014-09-24 13:48:13.784 --- INFORM: For OL4, couldn't find modis_30s data source.
+2014-09-24 13:48:13.784 --- INFORM: For OL4, couldn't find 2m data source.
+2014-09-24 13:48:13.784 --- INFORM: Using default data source for OL4.
+2014-09-24 13:48:13.785 --- INFORM: For VAR_SSO, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:13.785 --- INFORM: Using 2m interpolator sequence for VAR_SSO.
+2014-09-24 13:48:13.785 --- INFORM: For VAR_SSO, couldn't find modis_30s data source.
+2014-09-24 13:48:13.785 --- INFORM: Using 2m data source for VAR_SSO.
+2014-09-24 13:48:13.808 --- INFORM: For LAKE_DEPTH, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:13.808 --- INFORM: For LAKE_DEPTH, couldn't find interpolator sequence for resolution 2m.
+2014-09-24 13:48:13.809 --- INFORM: Using default interpolator sequence for LAKE_DEPTH.
+2014-09-24 13:48:13.809 --- INFORM: For LAKE_DEPTH, couldn't find modis_30s data source.
+2014-09-24 13:48:13.809 --- INFORM: For LAKE_DEPTH, couldn't find 2m data source.
+2014-09-24 13:48:13.809 --- INFORM: Using default data source for LAKE_DEPTH.
+2014-09-24 13:48:13.885 --- Processing field 1 of 25 (LANDUSEF)
+2014-09-24 13:48:14.759 --- Processing field 2 of 25 (LU_INDEX)
+2014-09-24 13:48:14.765 --- Processing field 3 of 25 (HGT_M)
+2014-09-24 13:48:14.803 --- Processing field 4 of 25 (SOILTEMP)
+2014-09-24 13:48:14.821 --- Processing field 5 of 25 (SOILCTOP)
+2014-09-24 13:48:15.057 --- Processing field 6 of 25 (SCT_DOM)
+2014-09-24 13:48:15.061 --- Processing field 7 of 25 (SOILCBOT)
+2014-09-24 13:48:15.253 --- Processing field 8 of 25 (SCB_DOM)
+2014-09-24 13:48:15.256 --- Processing field 9 of 25 (ALBEDO12M)
+2014-09-24 13:48:15.399 --- Processing field 10 of 25 (GREENFRAC)
+2014-09-24 13:48:15.540 --- Processing field 11 of 25 (LAI12M)
+2014-09-24 13:48:15.613 --- Processing field 12 of 25 (SNOALB)
+2014-09-24 13:48:15.627 --- Processing field 13 of 25 (SLOPECAT)
+2014-09-24 13:48:15.650 --- Processing field 14 of 25 (CON)
+2014-09-24 13:48:15.678 --- Processing field 15 of 25 (VAR)
+2014-09-24 13:48:15.703 --- Processing field 16 of 25 (OA1)
+2014-09-24 13:48:15.727 --- Processing field 17 of 25 (OA2)
+2014-09-24 13:48:15.752 --- Processing field 18 of 25 (OA3)
+2014-09-24 13:48:15.776 --- Processing field 19 of 25 (OA4)
+2014-09-24 13:48:15.801 --- Processing field 20 of 25 (OL1)
+2014-09-24 13:48:15.824 --- Processing field 21 of 25 (OL2)
+2014-09-24 13:48:15.847 --- Processing field 22 of 25 (OL3)
+2014-09-24 13:48:15.871 --- Processing field 23 of 25 (OL4)
+2014-09-24 13:48:15.894 --- Processing field 24 of 25 (VAR_SSO)
+2014-09-24 13:48:15.970 --- Processing field 25 of 25 (LAKE_DEPTH)
+2014-09-24 13:48:16.839 --- Processing domain 3 of 3
+2014-09-24 13:48:16.839 --- INFORM: For HGT_M, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:16.839 --- INFORM: Using 30s interpolator sequence for HGT_M.
+2014-09-24 13:48:16.840 --- INFORM: For HGT_M, couldn't find modis_30s data source.
+2014-09-24 13:48:16.840 --- INFORM: Using 30s data source for HGT_M.
+2014-09-24 13:48:16.860 --- INFORM: Using modis_30s interpolator sequence for LANDUSEF.
+2014-09-24 13:48:16.860 --- INFORM: Using modis_30s data source for LANDUSEF.
+2014-09-24 13:48:16.861 --- INFORM: For SOILTEMP, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:16.861 --- INFORM: For SOILTEMP, couldn't find interpolator sequence for resolution 30s.
+2014-09-24 13:48:16.862 --- INFORM: Using default interpolator sequence for SOILTEMP.
+2014-09-24 13:48:16.862 --- INFORM: For SOILTEMP, couldn't find modis_30s data source.
+2014-09-24 13:48:16.862 --- INFORM: For SOILTEMP, couldn't find 30s data source.
+2014-09-24 13:48:16.862 --- INFORM: Using default data source for SOILTEMP.
+2014-09-24 13:48:16.863 --- INFORM: For SOILCTOP, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:16.863 --- INFORM: Using 30s interpolator sequence for SOILCTOP.
+2014-09-24 13:48:16.863 --- INFORM: For SOILCTOP, couldn't find modis_30s data source.
+2014-09-24 13:48:16.863 --- INFORM: Using 30s data source for SOILCTOP.
+2014-09-24 13:48:16.872 --- INFORM: For SOILCBOT, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:16.873 --- INFORM: Using 30s interpolator sequence for SOILCBOT.
+2014-09-24 13:48:16.873 --- INFORM: For SOILCBOT, couldn't find modis_30s data source.
+2014-09-24 13:48:16.873 --- INFORM: Using 30s data source for SOILCBOT.
+2014-09-24 13:48:16.893 --- INFORM: For ALBEDO12M, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:16.893 --- INFORM: For ALBEDO12M, couldn't find interpolator sequence for resolution 30s.
+2014-09-24 13:48:16.893 --- INFORM: Using default interpolator sequence for ALBEDO12M.
+2014-09-24 13:48:16.893 --- INFORM: For ALBEDO12M, couldn't find modis_30s data source.
+2014-09-24 13:48:16.894 --- INFORM: For ALBEDO12M, couldn't find 30s data source.
+2014-09-24 13:48:16.894 --- INFORM: Using default data source for ALBEDO12M.
+2014-09-24 13:48:16.894 --- INFORM: For GREENFRAC, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:16.894 --- INFORM: For GREENFRAC, couldn't find interpolator sequence for resolution 30s.
+2014-09-24 13:48:16.895 --- INFORM: Using default interpolator sequence for GREENFRAC.
+2014-09-24 13:48:16.895 --- INFORM: For GREENFRAC, couldn't find modis_30s data source.
+2014-09-24 13:48:16.895 --- INFORM: For GREENFRAC, couldn't find 30s data source.
+2014-09-24 13:48:16.895 --- INFORM: Using default data source for GREENFRAC.
+2014-09-24 13:48:16.896 --- INFORM: For LAI12M, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:16.896 --- INFORM: For LAI12M, couldn't find interpolator sequence for resolution 30s.
+2014-09-24 13:48:16.896 --- INFORM: Using default interpolator sequence for LAI12M.
+2014-09-24 13:48:16.896 --- INFORM: For LAI12M, couldn't find modis_30s data source.
+2014-09-24 13:48:16.896 --- INFORM: For LAI12M, couldn't find 30s data source.
+2014-09-24 13:48:16.896 --- INFORM: Using default data source for LAI12M.
+2014-09-24 13:48:16.897 --- INFORM: For SNOALB, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:16.897 --- INFORM: For SNOALB, couldn't find interpolator sequence for resolution 30s.
+2014-09-24 13:48:16.897 --- INFORM: Using default interpolator sequence for SNOALB.
+2014-09-24 13:48:16.897 --- INFORM: For SNOALB, couldn't find modis_30s data source.
+2014-09-24 13:48:16.897 --- INFORM: For SNOALB, couldn't find 30s data source.
+2014-09-24 13:48:16.898 --- INFORM: Using default data source for SNOALB.
+2014-09-24 13:48:16.898 --- INFORM: For SLOPECAT, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:16.898 --- INFORM: For SLOPECAT, couldn't find interpolator sequence for resolution 30s.
+2014-09-24 13:48:16.898 --- INFORM: Using default interpolator sequence for SLOPECAT.
+2014-09-24 13:48:16.899 --- INFORM: For SLOPECAT, couldn't find modis_30s data source.
+2014-09-24 13:48:16.899 --- INFORM: For SLOPECAT, couldn't find 30s data source.
+2014-09-24 13:48:16.899 --- INFORM: Using default data source for SLOPECAT.
+2014-09-24 13:48:16.899 --- INFORM: For CON, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:16.900 --- INFORM: For CON, couldn't find interpolator sequence for resolution 30s.
+2014-09-24 13:48:16.900 --- INFORM: Using default interpolator sequence for CON.
+2014-09-24 13:48:16.900 --- INFORM: For CON, couldn't find modis_30s data source.
+2014-09-24 13:48:16.900 --- INFORM: For CON, couldn't find 30s data source.
+2014-09-24 13:48:16.900 --- INFORM: Using default data source for CON.
+2014-09-24 13:48:16.901 --- INFORM: For VAR, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:16.901 --- INFORM: For VAR, couldn't find interpolator sequence for resolution 30s.
+2014-09-24 13:48:16.901 --- INFORM: Using default interpolator sequence for VAR.
+2014-09-24 13:48:16.901 --- INFORM: For VAR, couldn't find modis_30s data source.
+2014-09-24 13:48:16.901 --- INFORM: For VAR, couldn't find 30s data source.
+2014-09-24 13:48:16.901 --- INFORM: Using default data source for VAR.
+2014-09-24 13:48:16.902 --- INFORM: For OA1, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:16.902 --- INFORM: For OA1, couldn't find interpolator sequence for resolution 30s.
+2014-09-24 13:48:16.902 --- INFORM: Using default interpolator sequence for OA1.
+2014-09-24 13:48:16.902 --- INFORM: For OA1, couldn't find modis_30s data source.
+2014-09-24 13:48:16.902 --- INFORM: For OA1, couldn't find 30s data source.
+2014-09-24 13:48:16.903 --- INFORM: Using default data source for OA1.
+2014-09-24 13:48:16.903 --- INFORM: For OA2, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:16.903 --- INFORM: For OA2, couldn't find interpolator sequence for resolution 30s.
+2014-09-24 13:48:16.903 --- INFORM: Using default interpolator sequence for OA2.
+2014-09-24 13:48:16.904 --- INFORM: For OA2, couldn't find modis_30s data source.
+2014-09-24 13:48:16.904 --- INFORM: For OA2, couldn't find 30s data source.
+2014-09-24 13:48:16.904 --- INFORM: Using default data source for OA2.
+2014-09-24 13:48:16.904 --- INFORM: For OA3, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:16.905 --- INFORM: For OA3, couldn't find interpolator sequence for resolution 30s.
+2014-09-24 13:48:16.905 --- INFORM: Using default interpolator sequence for OA3.
+2014-09-24 13:48:16.905 --- INFORM: For OA3, couldn't find modis_30s data source.
+2014-09-24 13:48:16.905 --- INFORM: For OA3, couldn't find 30s data source.
+2014-09-24 13:48:16.905 --- INFORM: Using default data source for OA3.
+2014-09-24 13:48:16.906 --- INFORM: For OA4, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:16.906 --- INFORM: For OA4, couldn't find interpolator sequence for resolution 30s.
+2014-09-24 13:48:16.906 --- INFORM: Using default interpolator sequence for OA4.
+2014-09-24 13:48:16.906 --- INFORM: For OA4, couldn't find modis_30s data source.
+2014-09-24 13:48:16.906 --- INFORM: For OA4, couldn't find 30s data source.
+2014-09-24 13:48:16.906 --- INFORM: Using default data source for OA4.
+2014-09-24 13:48:16.907 --- INFORM: For OL1, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:16.907 --- INFORM: For OL1, couldn't find interpolator sequence for resolution 30s.
+2014-09-24 13:48:16.907 --- INFORM: Using default interpolator sequence for OL1.
+2014-09-24 13:48:16.907 --- INFORM: For OL1, couldn't find modis_30s data source.
+2014-09-24 13:48:16.907 --- INFORM: For OL1, couldn't find 30s data source.
+2014-09-24 13:48:16.908 --- INFORM: Using default data source for OL1.
+2014-09-24 13:48:16.908 --- INFORM: For OL2, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:16.908 --- INFORM: For OL2, couldn't find interpolator sequence for resolution 30s.
+2014-09-24 13:48:16.908 --- INFORM: Using default interpolator sequence for OL2.
+2014-09-24 13:48:16.908 --- INFORM: For OL2, couldn't find modis_30s data source.
+2014-09-24 13:48:16.909 --- INFORM: For OL2, couldn't find 30s data source.
+2014-09-24 13:48:16.909 --- INFORM: Using default data source for OL2.
+2014-09-24 13:48:16.909 --- INFORM: For OL3, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:16.910 --- INFORM: For OL3, couldn't find interpolator sequence for resolution 30s.
+2014-09-24 13:48:16.910 --- INFORM: Using default interpolator sequence for OL3.
+2014-09-24 13:48:16.910 --- INFORM: For OL3, couldn't find modis_30s data source.
+2014-09-24 13:48:16.910 --- INFORM: For OL3, couldn't find 30s data source.
+2014-09-24 13:48:16.910 --- INFORM: Using default data source for OL3.
+2014-09-24 13:48:16.911 --- INFORM: For OL4, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:16.911 --- INFORM: For OL4, couldn't find interpolator sequence for resolution 30s.
+2014-09-24 13:48:16.911 --- INFORM: Using default interpolator sequence for OL4.
+2014-09-24 13:48:16.911 --- INFORM: For OL4, couldn't find modis_30s data source.
+2014-09-24 13:48:16.911 --- INFORM: For OL4, couldn't find 30s data source.
+2014-09-24 13:48:16.911 --- INFORM: Using default data source for OL4.
+2014-09-24 13:48:16.912 --- INFORM: For VAR_SSO, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:16.912 --- INFORM: Using 30s interpolator sequence for VAR_SSO.
+2014-09-24 13:48:16.912 --- INFORM: For VAR_SSO, couldn't find modis_30s data source.
+2014-09-24 13:48:16.912 --- INFORM: Using 30s data source for VAR_SSO.
+2014-09-24 13:48:16.924 --- INFORM: For LAKE_DEPTH, couldn't find interpolator sequence for resolution modis_30s.
+2014-09-24 13:48:16.924 --- INFORM: For LAKE_DEPTH, couldn't find interpolator sequence for resolution 30s.
+2014-09-24 13:48:16.924 --- INFORM: Using default interpolator sequence for LAKE_DEPTH.
+2014-09-24 13:48:16.924 --- INFORM: For LAKE_DEPTH, couldn't find modis_30s data source.
+2014-09-24 13:48:16.924 --- INFORM: For LAKE_DEPTH, couldn't find 30s data source.
+2014-09-24 13:48:16.924 --- INFORM: Using default data source for LAKE_DEPTH.
+2014-09-24 13:48:16.995 --- Processing field 1 of 25 (LANDUSEF)
+2014-09-24 13:48:17.449 --- Processing field 2 of 25 (LU_INDEX)
+2014-09-24 13:48:17.453 --- Processing field 3 of 25 (HGT_M)
+2014-09-24 13:48:17.539 --- Processing field 4 of 25 (SOILTEMP)
+2014-09-24 13:48:17.555 --- Processing field 5 of 25 (SOILCTOP)
+2014-09-24 13:48:18.050 --- Processing field 6 of 25 (SCT_DOM)
+2014-09-24 13:48:18.052 --- Processing field 7 of 25 (SOILCBOT)
+2014-09-24 13:48:18.664 --- Processing field 8 of 25 (SCB_DOM)
+2014-09-24 13:48:18.666 --- Processing field 9 of 25 (ALBEDO12M)
+2014-09-24 13:48:18.791 --- Processing field 10 of 25 (GREENFRAC)
+2014-09-24 13:48:18.915 --- Processing field 11 of 25 (LAI12M)
+2014-09-24 13:48:18.981 --- Processing field 12 of 25 (SNOALB)
+2014-09-24 13:48:18.994 --- Processing field 13 of 25 (SLOPECAT)
+2014-09-24 13:48:19.016 --- Processing field 14 of 25 (CON)
+2014-09-24 13:48:19.038 --- Processing field 15 of 25 (VAR)
+2014-09-24 13:48:19.059 --- Processing field 16 of 25 (OA1)
+2014-09-24 13:48:19.081 --- Processing field 17 of 25 (OA2)
+2014-09-24 13:48:19.103 --- Processing field 18 of 25 (OA3)
+2014-09-24 13:48:19.125 --- Processing field 19 of 25 (OA4)
+2014-09-24 13:48:19.147 --- Processing field 20 of 25 (OL1)
+2014-09-24 13:48:19.168 --- Processing field 21 of 25 (OL2)
+2014-09-24 13:48:19.189 --- Processing field 22 of 25 (OL3)
+2014-09-24 13:48:19.210 --- Processing field 23 of 25 (OL4)
+2014-09-24 13:48:19.230 --- Processing field 24 of 25 (VAR_SSO)
+2014-09-24 13:48:19.299 --- Processing field 25 of 25 (LAKE_DEPTH)
+2014-09-24 13:48:19.755 ---  *** Successful completion of program geogrid.exe ***
