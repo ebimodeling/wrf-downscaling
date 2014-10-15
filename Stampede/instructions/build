@@ -1,0 +1,28 @@
+Building process followed tutorial at: http://www2.mmm.ucar.edu/wrf/OnLineTutorial/compilation_tutorial.php
+
+Using following modules on Stampede:
+    
+    parallel-netcdf/4.2.1.1
+    phdf5/1.8.9
+
+Extra lib to be installed (not provided on Stampede)
+
+    jasper-1.900.1
+
+
+WRF build:
+    Edit ARCH/Config_new.pl to enable grib2.
+    run ./configure
+
+    Edit configure.wrf and remove all timex command.
+    run ./compile
+    
+    choose em_real when prompted
+
+
+WPS build:
+    run ./configure
+
+    Edit variable WRF_DIR in configure.wps pointing to the correct WRF build directory.
+
+    run ./compile
