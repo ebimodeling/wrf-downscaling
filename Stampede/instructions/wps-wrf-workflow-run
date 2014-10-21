@@ -16,7 +16,7 @@ Step 1:
 
 Step 2:
     
-        use python script to download grib data. (Need registration and put private key at local home directory)
+        use python script to download grib data. (Need registration and put private API key at local home directory)
             Use a dedicated server to download grib eraint data
             get python file: era-int/retrieve_eraint_data_for_wps.py
         Need to install ecmwfapi module
@@ -24,11 +24,34 @@ Step 2:
                 1. download ecmwfapi module
                 2. register account
                 3. follow procedue to install your API Key (create .ecmwfapirc configuration file)
+                4. new users need to sign an agreement on their website (if you face 403 Forbidden)
+            python era-int/retrieve_eraint_data_for_wps.py --strt_dt='1987-09-30' --end_dt='1987-10-02'
+        Transfer data from local to Stampede
+            Scp ERA-* files from local dedicated data server to Stampede (../WRF/ERA)
+            
+    Use link_grib.csh to link all .grb file. (link_grib.csh is at the folder Build_WPS/WPS)
+            ./link_grib.csh /work/03084/taolin1/WRF/ERA/E (ERA file directory with the file starting name E)
         
-        python era-int/retrieve_eraint_data_for_wps.py --strt_dt='1987-09-30' --end_dt='1987-10-02'
-        
-    use link_grib.csh to link all .grb file.
-    run ungrib.exe (twice with different namelist.wps in &ungrib section)    // Use CORRECT VTable
+    Edit namelist.wps file to make sure the simulation time horizon is consistent with the data
+            # hint: the required data input needs to be one day earlier than the simulatio horizon
+    
+    Link the correct VTable
+            copy Vtable from GitHub to Build_WPS/WPS
+                (https://github.com/ebimodeling/wrf-downscaling/blob/master/era-int/Vtable)
+    
+    Run ungrib.exe (twice with different namelist.wps in &ungrib section)    // Use CORRECT VTable           
+                
+        Submit two job scripts: (run ungrib.exe)
+            1.  copy inv_landseamask.grb file from GitHub to WRF/ERA)
+                Use link_grib.csh to link all .grb file. (link_grib.csh is at the folder Build_WPS/WPS)
+                    ./link_grib.csh /work/03084/taolin1/WRF/ERA/*.grb 
+                run ungrib.exe
+            2.  copy inv_geopotential2.grb file from GitHub to WRF/ERA
+                remove inv_landseamask.grb
+                    ./link_grib.csh /work/03084/taolin1/WRF/ERA/*.grb 
+                run ungrib.exe
+    
+   
 
     output: LSM:${datetime_each_interval} and Z:${datetime_each_interval}
     datetime_each_interval examples: 2008-01-07_00, 2008-01-07_06, 2008-01-07_12 ... (6 hours interval)
