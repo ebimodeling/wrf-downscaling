@@ -7,7 +7,11 @@ Step 1:
                 Geog Data get:
                     wget http://www2.mmm.ucar.edu/wrf/src/wps_files/geog_complete.tar.bz2 
                     tar -xvjf geog_complete.tar.bz2 
+                    The files have been saved at data folder
                     
+                Edit namelist.wps file to link the correct geog_data_path
+                Create geogrid.script file to submit slurm job
+                    sbatch geogrid.script
     output: geo_em.d01.nc, geo_em.d02.nc and geo_em.d03.nc
 
 Step 2:
