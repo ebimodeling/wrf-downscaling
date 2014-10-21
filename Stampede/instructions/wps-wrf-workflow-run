@@ -13,6 +13,10 @@ Step 2:
         Use a dedicated server to download grib eraint data
         get python file: era-int/retrieve_eraint_data_for_wps.py
         Need to install ecmwfapi module
+            go to website: https://software.ecmwf.int/wiki/display/WEBAPI/Accessing+ECMWF+data+servers+in+batch
+                1. download ecmwfapi module
+                2. register account
+                3. follow procedue to install your API Key
         
         python era-int/retrieve_eraint_data_for_wps.py --strt_dt='1987-09-30' --end_dt='1987-10-02'
         
