@@ -4,6 +4,8 @@ Step 1:
     geog.exe        // Get the full geog data set zip file from
                     // http://www2.mmm.ucar.edu/wrf/users/download/get_sources_wps_geog.html
 
+                    wget http://www2.mmm.ucar.edu/wrf/src/wps_files/geog_complete.tar.bz2 
+                    tar -xvjf geog_complete.tar.bz2 
     output: geo_em.d01.nc, geo_em.d02.nc and geo_em.d03.nc
 
 Step 2:
