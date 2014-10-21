@@ -10,6 +10,12 @@ Step 1:
 
 Step 2:
     use python script to download grib data. (Need registration and put private key at local home directory)
+        Use a dedicated server to download grib eraint data
+        get python file: era-int/retrieve_eraint_data_for_wps.py
+        Need to install ecmwfapi module
+        
+        python era-int/retrieve_eraint_data_for_wps.py --strt_dt='1987-09-30' --end_dt='1987-10-02'
+        
     use link_grib.csh to link all .grb file.
     run ungrib.exe (twice with different namelist.wps in &ungrib section)    // Use CORRECT VTable
 
