@@ -86,7 +86,18 @@ Step 3:
 
 Step 4:
     real.exe        // put namelist.input, nam_io_d01.txt, nam_io_d02.txt, nam_io_d03.txt in position
-    
+        create a new directory (em_real) in work directory
+        move metgrid output files (met_em.d0*.nc) to work directory
+       
+        get related input configuration files (*d01.txt,*d02.txt,*d03.txt) from Github
+            wget https://github.com/ebimodeling/wrf-downscaling/blob/master/Stampede/namelist/nam_io_d01.txt
+        get namelist.input from Github
+            wget https://github.com/ebimodeling/wrf-downscaling/blob/master/install/namelist.input
+        edit namelist.input to make sure simulation time horizon is correct
+        check diff_opt  //diffusion option is on or not
+        
+        create real.script 
+        sbatch real.script
     output: wrfbdy_d01, wrffdda_d01, wrfinput_d01, wrfinput_d02, wrfinput_d03, wrflowinp_d01, wrflowinp_d02, wrflowinp_d03
 
 Step 5:
