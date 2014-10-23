@@ -86,7 +86,7 @@ Step 3:
 
 Step 4:
     real.exe        // put namelist.input, nam_io_d01.txt, nam_io_d02.txt, nam_io_d03.txt in position
-        create a new directory (em_real) in work directory
+        create a new directory in work directory (/work/../WRF/em_real)
         move metgrid output files (met_em.d0*.nc) to work directory
        
         get related input configuration files (*d01.txt,*d02.txt,*d03.txt) from Github
@@ -103,6 +103,13 @@ Step 4:
 Step 5:
     wrf.exe         // a bunch of configuration files in folder /work/01701/yefan/WRF/em_real
                     // they were copied from David's run folder on Blacklight. Most names of them start with a capital letter.
+        
+        download necessary configuration files into folder /work/../WRF/em_real
+            https://github.com/ebimodeling/wrf-downscaling/tree/master/Stampede/wrf-configuration-files
+        create wrf.script
+        sbatch wrf.script
+        
+
 
     output: wrfout_d01_${datetime_each_interval_with_mins_secs}
             wrfrst_d01_${datetime_each_interval_with_mins_secs}
