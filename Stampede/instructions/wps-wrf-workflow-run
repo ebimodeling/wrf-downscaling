@@ -83,8 +83,8 @@ Step 3:
             met_em.d03.${datetime_each_interval_with_mins_secs}.nc
 
     datetime_each_interval_with_mins_secs examples: 2008-01-07_00:00:00, 2008-01-07_06:00:00, 2008-01-07_12:00:00 (6 hours interval)
-
-Step 4:
+    
+    Step 4:
     real.exe        // put namelist.input, nam_io_d01.txt, nam_io_d02.txt, nam_io_d03.txt in position
         create a new directory in work directory (/work/../WRF/em_real)
         move metgrid output files (met_em.d0*.nc) to work directory
@@ -93,12 +93,16 @@ Step 4:
             wget https://github.com/ebimodeling/wrf-downscaling/blob/master/Stampede/namelist/nam_io_d01.txt
         get namelist.input from Github
             wget https://github.com/ebimodeling/wrf-downscaling/blob/master/install/namelist.input
+            current version is in /work/03084/taolin1/WRF/em_real
         edit namelist.input to make sure simulation time horizon is correct
         check diff_opt  //diffusion option is on or not
         
         create real.script 
         sbatch real.script
     output: wrfbdy_d01, wrffdda_d01, wrfinput_d01, wrfinput_d02, wrfinput_d03, wrflowinp_d01, wrflowinp_d02, wrflowinp_d03
+    
+    If you have run the model on multiple processors using MPI, you should have a number of rsl.out.* and rsl.error.* files. 
+    Type ‘tail rsl.out.0000’ to see if you get ‘SUCCESS COMPLETE SUCCESS COMPLETE REAL_EM INIT’. This is a good indication that the model has run successfully.
 
 Step 5:
     wrf.exe         // a bunch of configuration files in folder /work/01701/yefan/WRF/em_real
