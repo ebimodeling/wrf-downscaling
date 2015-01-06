@@ -46,7 +46,7 @@ Step 2:
             1.  copy inv_landseamask.grb file from GitHub to WRF/ERA)
                 Use link_grib.csh to link all .grb file. (link_grib.csh is at the folder Build_WPS/WPS)
                     ./link_grib.csh /work/03084/taolin1/WRF/ERA/*.grb 
-                Edit namelish.wps
+                Edit namelist.wps
                         &ungrib
                             out_format = 'WPS',
                             prefix = 'LSM',
@@ -56,7 +56,7 @@ Step 2:
             2.  copy inv_geopotential2.grb file from GitHub to WRF/ERA
                 remove inv_landseamask.grb
                     ./link_grib.csh /work/03084/taolin1/WRF/ERA/*.grb 
-                Edit namelish.wps
+                Edit namelist.wps
                         &ungrib
                             out_format = 'WPS',
                             prefix = 'Z',
