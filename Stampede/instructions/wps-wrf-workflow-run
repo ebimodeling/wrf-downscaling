@@ -24,6 +24,7 @@ Step 2:
                 1. download ecmwfapi module
                 2. register account
                 3. follow procedue to install your API Key (create .ecmwfapirc configuration file)
+                    API Key: https://github.com/ebimodeling/wrf-downscaling/blob/master/.ecmwfapirc
                 4. new users need to sign an agreement on their website (if you face 403 Forbidden)
             python era-int/retrieve_eraint_data_for_wps.py --strt_dt='1987-09-30' --end_dt='1987-10-02'
         Transfer data from local to Stampede
